@@ -1,0 +1,331 @@
+
+#wrapper {
+    font-family: 'helvetica', 'sans-serif';
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #0C3C60;
+    padding: 20px;
+    position: relative;
+}
+
+header .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+.logo span {
+    color: #7DCAC3;
+}
+
+.aris-menu {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.aris-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 0.75em;
+    margin: 0 12px;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+.makassar-image {
+    position: relative;
+    max-height: 650px;
+    overflow: hidden;
+    margin-bottom: 90px;
+}
+
+.makassar-image img {
+    width: 100%;
+}
+
+.makassar-bar {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.65);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.makassar-bar h1,
+.makassar-bar h3 {
+    color: #0C3C60;
+}
+
+.makassar-bar h3 {
+    margin-bottom: 10px;
+}
+
+.article-boxes {
+    margin-bottom: 90px;
+}
+
+.article-boxes .flex {
+    justify-content: space-between;
+}
+
+.box {
+    background-color: #0C3C60;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.box2 {
+    margin: 0 40px;
+}
+
+.box h2 {
+    margin-bottom: 40px;
+    color: #CBE0EB;
+}
+
+.box p {
+    line-height: 1.5em;
+    margin-bottom: 40px;
+}
+
+.box button {
+    background-color: #6EA4CA;
+    border: none;
+    padding: 8px 30px;
+    color: #fff;
+    font-size: 1.25em;
+}
+.sidebar {
+    float:right;
+    width:275px;
+
+}
+
+.sidebar .widget {
+    padding:25px;
+    margin:0 0 25px;
+    background:#fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s ease;
+    background-color: #0C3C60;
+    color: #CBE0EB;
+}
+
+.sidebar .widget:hover {
+    border-bottom: 2px solid #3498db;
+}
+
+
+.sidebar .widget p {
+    font-size: 14px;
+}
+
+.sidebar .widget p:last-child {
+    margin:0;
+}
+
+footer {
+    background-color: #0C3C60;
+    padding: 75px 0 60px;
+    color: #fff;
+}
+
+footer .flex {
+    max-width: 900px;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .box {
+        width: 100%;
+        margin: 40px 0;
+        box-sizing: border-box;
+    }
+
+    .map {
+        width: 90%;
+        height: 300px;
+        margin: 0 auto 60px;
+        text-align: center;
+    }
+
+    .map img {
+        height: 100%;
+    }
+
+    .contact-form {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer ul {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 651px) {
+    nav ul {
+        display: block !important;
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 0.8em;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #0C3C60;
+        top: 100%;
+        z-index: 3;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+        padding: 15px 0 5px;
+        border-top: 1px solid #fff;
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+    }
+
+    .aris-menu {
+        display: block;
+    }
+
+    .makassar-bar {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 0.75em;
+    }
+
+    .makassar-bar {
+        position: static;
+    }
+}
+
+
+

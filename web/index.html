@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Belajar Web</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="java.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <div class="flex">
+      <div class="logo">
+        <a href="#" >Arisandi <span>Tech</span></a>
+      </div>
+      <nav>
+        <button id="nav-toggle" class="aris-menu">
+          <span class="strip"></span>
+          <span class="strip"></span>
+          <span class="strip"></span>
+        </button>
+        <ul id="nav-menu-container">
+          <li><a href="#sidebar">About</a></li>
+          <li><a href="#wisata">Wisata</a></li>
+          <li><a href="#makanan">Makanan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="makassar-image">
+      <img src="1.png" alt="Makassar" />
+      <div class="makassar-bar">
+        <h3>Makassar City</h3>
+        <h1>Makassar metropolitan city</h1>
+      </div>
+    </article>
+
+    <aside class="sidebar" id="sidebar"> 
+      <div class="widget">
+        <h2>About</h2>
+        <p id="about"></p>
+        <script>
+            document.getElementById("about").innerHTML = "Nama : Arisandi </br> STT Terpadu Nurul Fikri </br> Asal : Sinjai, Sulawesi Selatan </br> Telp/WA : 089639117914</br> Email : Sandi.arisfficial@gmail.com";
+          </script>
+      </div>
+    </aside>
+
+    
+    <article class="article-boxes">
+      <div class="flex">
+        <div class="box" id="wisata">
+          <h2 id="tempat"></h2>
+          <script>
+            document.getElementById("tempat").innerHTML = "Tempat Wisata";
+          </script>
+          <p id="nama"></p>
+          <script>
+              document.getElementById("nama").innerHTML = "Makassar yang terkenal dengan kuliner khasnya, pisang epe dan coto ini memiliki berbagai tempat wisata yang indah. Berada di pesisir Pulau Sulawesi, kota ini populer dengan Pantai Losarinya. Tapi ternyata Makassar masih memiliki beragam tempat wisata andalan, mulai dari pantai sampai dataran tingginya. Jangan sampai saat berada di Makassar, Anda tidak tahu harus ke mana.";
+        </script>
+          <button>More Info</button>
+        </div>
+        
+        <div class="box box2" id="makanan">
+          <h2>Makanan Khas</h2>
+          <p id="khas"></p>
+          <script>
+              document.getElementById("khas").innerHTML = "Makanan khas Makassar memiliki berbagai macam rasa dan olahan. Makanan khas Makassar yang cukup terkenal adalah Coto Makassar, dan es pisang ijo. Namun selain dua makanan khas Makassar tadi, masih banyak lagi makanan khas yang bisa kamu cicipi ketika berada di sini, dari rasa yang pedas, hingg gurih, dan manis, semuanya ada di Makassar.Berbagai macam olahan bisa kamu temui di Makassar, dan tentunya bisa kamu cicipi hingga dibawa pulang untuk oleh-oleh saat berwisata ke sana.";
+        </script>
+          <button type="button" onclick="document.getElementById('makanan').style.color = 'aqua'"> More Info</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+
+  <footer>
+    <div class="flex">
+      <small>&copy; 2020 Arisandi Tech. </small>
+      <ul>
+        <li>
+          <a href="m.facebook.com">
+            <img src="fb.png" alt="Facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="mobile.twitter.com">
+            <img src="tweet.png" alt="Twitter" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+</body>
+</html>
